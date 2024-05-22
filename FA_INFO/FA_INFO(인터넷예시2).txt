@@ -1,0 +1,17 @@
+* DFA 정보
+StateSet = {q002,q001,q000}
+TerminalSet = {0,1}
+DeltaFunctions = {
+   (q000,0) = q000
+   (q000,1) = q001
+   (q001,0) = q002
+   (q001,1) = q001
+   (q002,0) = q002
+   (q002,1) = q002
+}
+StartState = q000
+FinalStateSet = {q002}
+
+
+* reduced_DFA 정보
+DFA의 상태들이 모두 indistinguishable함.

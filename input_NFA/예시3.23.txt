@@ -1,0 +1,10 @@
+StateSet = {0,1,2,3}
+TerminalSet = {a,b}
+DeltaFunctions = {
+	(0,a) = {0,1}
+	(0,b) = {0}
+    (1,b) = {2}
+    (2,b) = {3}
+}
+StartState = 0
+FinalStateSet = {3}

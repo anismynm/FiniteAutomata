@@ -1,0 +1,34 @@
+* DFA 정보
+StateSet = {q001,q000,q003,q002,q004}
+TerminalSet = {b,a}
+DeltaFunctions = {
+   (q000,b) = q001
+   (q000,a) = q002
+   (q002,b) = q001
+   (q002,a) = q003
+   (q003,b) = q004
+   (q003,a) = q003
+   (q004,b) = q004
+   (q004,a) = q003
+   (q001,b) = q004
+   (q001,a) = q002
+}
+StartState = q000
+FinalStateSet = {q003,q004}
+
+
+* reduced_DFA 정보
+StateSet = {{'q000'},{'q001'},{'q003', 'q004'},{'q002'}}
+TerminalSet = {b,a}
+DeltaFunctions = {
+   ({'q000'},b) = {'q001'}
+   ({'q000'},a) = {'q002'}
+   ({'q001'},b) = {'q003', 'q004'}
+   ({'q001'},a) = {'q002'}
+   ({'q003', 'q004'},b) = {'q003', 'q004'}
+   ({'q003', 'q004'},a) = {'q003', 'q004'}
+   ({'q002'},b) = {'q001'}
+   ({'q002'},a) = {'q003', 'q004'}
+}
+StartState = {'q000'}
+FinalStateSet = {{'q003', 'q004'}}

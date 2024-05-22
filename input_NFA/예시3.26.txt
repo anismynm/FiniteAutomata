@@ -1,0 +1,11 @@
+StateSet = {1,2,3,4}
+TerminalSet = {a,b,c}
+DeltaFunctions = {
+	(1,a) = {2}
+	(1,ε) = {3}
+	(2,b) = {4}
+	(3,c) = {3}
+	(3,ε) = {4}
+}
+StartState = 1
+FinalStateSet = {4}
